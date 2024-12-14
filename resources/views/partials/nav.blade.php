@@ -11,11 +11,12 @@
 
         <!-- Navigation Links -->
         <ul class="hidden md:flex space-x-6 text-white uppercase text-sm">
-            <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#" class="hover:underline">Services</a></li>
-            <li><a href="#" class="hover:underline">Portfolio</a></li>
-            <li><a href="#" class="hover:underline">About</a></li>
-            <li><a href="#" class="hover:underline">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
         <!-- Mobile Menu Button -->
@@ -34,10 +35,11 @@
     <div id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full bg-black bg-opacity-70 hidden">
         <ul class="flex flex-col space-y-6 text-white uppercase text-sm p-6">
             <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#" class="hover:underline">Services</a></li>
-            <li><a href="#" class="hover:underline">Portfolio</a></li>
-            <li><a href="#" class="hover:underline">About</a></li>
-            <li><a href="#" class="hover:underline">Contact</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#mission" class="hover:underline">Mission</a></li>
+            <li><a href="#service" class="hover:underline">Services</a></li>
+            <li><a href="#blog" class="hover:underline">Blog</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
     </div>
 
@@ -57,41 +59,48 @@
     </div>
 
     <!-- Content Section -->
-    <div id="content-section" class="absolute inset-0 flex flex-col items-start justify-center p-8 z-10"
-        style="gap: 27px;">
+    <div id="content-section" class="absolute inset-0 flex flex-col items-center justify-center p-6 z-10 text-center">
         <!-- Tagline -->
         <div id="tagline" class="text-white mb-4 animate-slide-in">
-            <div class="text-lg font-semibold tracking-wide uppercase bg-black bg-opacity-70 px-4 py-2 inline-block"
-                style="font-size: 40px;">
+            <div class="text-lg font-semibold tracking-wide uppercase bg-black bg-opacity-70 px-4 py-2 inline-block">
                 Dstudio - Your Distant Design Partner
             </div>
         </div>
 
         <!-- Main Title -->
-        <div id="main-title" class="relative border-4 border-white w-max animate-fade-in">
-            <h1 class="text-white font-bold uppercase leading-tight tracking-wider px-8 py-4" style="font-size: 40px;">
+        <div id="main-title" class="relative border-4 border-white animate-fade-in">
+            <h1 class="text-white font-bold uppercase leading-tight tracking-wider px-4 py-2 text-xl md:text-3xl lg:text-5xl">
                 Innovating Spaces, Empowering Communities
             </h1>
         </div>
 
         <!-- Call-to-Action Buttons -->
-        <div class="mt-6 space-x-4 animate-fade-in-delay">
-            <button class="btn"
-                style="background: rgba(255, 255, 255, 0.25);border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);font-family: math;">
-                Urban Services </button>
-
-            <button class="btn"
-                style="background: rgba(255, 255, 255, 0.25);border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);font-family: math;">
-                Rural Services </button>
-
-            <button class="btn"
-                style="background: rgba(255, 255, 255, 0.25);border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);font-family: math;">
-                Global Remote Services </button>
+        <div class="mt-6 space-y-2 md:space-x-4 md:space-y-0">
+            <a href="#service">
+                <button class="btn">
+                    Urban Services
+                </button>
+            </a>
+            <a href="#service">
+                <button class="btn">
+                    Rural Services
+                </button>
+            </a>
+            <a href="#service">
+                <button class="btn">
+                    Global Remote Services
+                </button>
+            </a>
         </div>
     </div>
 </div>
 
 <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
     // Slider Animation Script
     const slides = document.querySelectorAll('#slider > div');
     let currentSlide = 0;
@@ -119,7 +128,6 @@
 
         tagline.innerHTML = `<div class="text-lg font-semibold tracking-wide uppercase bg-black bg-opacity-70 px-4 py-2 inline-block">${taglines[index]}</div>`;
         mainTitle.innerHTML = `<h1 class="text-white font-bold uppercase leading-tight tracking-wider px-8 py-4" style="font-size: 40px;">${getLetterAnimation(mainTitles[index])}</h1>`;
-
     }
 
     function nextSlide() {
@@ -140,6 +148,31 @@
 </script>
 
 <style>
+     @media (max-width: 768px) {
+        #content-section {
+            padding: 4px;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            font-size: 12px;
+            padding: 8px 15px;
+        }
+
+        .btn {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 20px;
+        }
+
+        .btn {
+            padding: 0.5em 1.25em;
+        }
+    }
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -234,5 +267,42 @@
     .btn:active {
         filter: brightness(.7);
         transform: scale(.98);
+    }
+
+    /* Navigation Link Style */
+    nav ul li a {
+        position: relative;
+        display: inline-block;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Hover effect with background color change */
+    nav ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    /* Floating effect from bottom to top */
+    nav ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 </style>
