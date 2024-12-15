@@ -16,6 +16,10 @@
         scroll-behavior: smooth;
     }
 
+    .lack {
+         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3cpath d='M1056.2996450949677 268.00682398232436L888.5711650431135 235.2377908951925 934.7361643098659 377.3190491321843z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1310.7933019788748 434.92962590126274L1429.3021872197778 485.23366318310013 1361.0973392607123 316.4207406603597z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M804.814%2c390.108C837.425%2c389.681%2c858.932%2c360.047%2c874.889%2c331.603C890.391%2c303.97%2c901.79%2c271.718%2c886.925%2c243.738C871.307%2c214.341%2c838.093%2c200.461%2c804.814%2c199.7C769.981%2c198.903%2c732.675%2c209.273%2c715.928%2c239.826C699.625%2c269.569%2c714.216%2c304.289%2c731.483%2c333.483C748.334%2c361.973%2c771.717%2c390.542%2c804.814%2c390.108' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M137.00200741100394 288.8165693086527L259.85619454972147 174.25318640661897 145.29281164768776 51.398999267901445 22.438624508970236 165.96238216993515z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1250.8 272.56 a129.67 129.67 0 1 0 259.34 0 a129.67 129.67 0 1 0 -259.34 0z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M175.84 205.84 a118.89 118.89 0 1 0 237.78 0 a118.89 118.89 0 1 0 -237.78 0z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M960.09%2c178.846C988.263%2c178.941%2c1008.398%2c154.738%2c1022.09%2c130.116C1035.305%2c106.351%2c1042.098%2c78.352%2c1029.321%2c54.349C1015.839%2c29.021%2c988.769%2c14.54%2c960.09%2c13.641C929.662%2c12.688%2c897.127%2c22.841%2c882.913%2c49.762C869.317%2c75.511%2c883.868%2c104.708%2c898.81%2c129.7C913.211%2c153.787%2c932.026%2c178.751%2c960.09%2c178.846' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1039.769387282613 556.4870834892666L1019.4342591781804 428.09613761879393 891.0433133077076 448.4312657232266 911.3784414121403 576.8222115936993z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1400.8198927912183 434.91830597089273L1275.6986097767317 401.3921592312151 1367.2937460515407 560.0395889853793z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M818.8483391886757 532.4252299609534L943.9789472533889 563.6237945642811 975.1775118567166 438.49318649956786 850.0469037920034 407.2946218962402z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1246.186%2c207.166C1289.299%2c209.653%2c1336.775%2c201.222%2c1359.216%2c164.326C1382.295%2c126.381%2c1371.092%2c78.202%2c1347.515%2c40.565C1325.495%2c5.413%2c1287.639%2c-14.632%2c1246.186%2c-16.109C1201.67%2c-17.695%2c1152.957%2c-6.181%2c1131.53%2c32.871C1110.626%2c70.969%2c1129.807%2c116.166%2c1153.689%2c152.471C1174.788%2c184.544%2c1207.859%2c204.955%2c1246.186%2c207.166' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1088.550857433312 353.1074865055787L1012.981113765535 410.0533729116621 1069.9270001716184 485.62311657943917 1145.4967438393955 428.6772301733558z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M913.397%2c197.493C955.987%2c198.004%2c994.514%2c176.511%2c1018.581%2c141.37C1046.807%2c100.157%2c1069.501%2c48.171%2c1045.765%2c4.219C1021.257%2c-41.162%2c964.808%2c-57.523%2c913.397%2c-53.397C868.592%2c-49.801%2c834.222%2c-16.93%2c813.337%2c22.872C794.076%2c59.578%2c791.885%2c102.931%2c812.494%2c138.898C833.22%2c175.068%2c871.713%2c196.993%2c913.397%2c197.493' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M180.332%2c491.999C199.067%2c490.855%2c214.328%2c478.276%2c223.325%2c461.803C231.916%2c446.073%2c232.471%2c427.554%2c224.216%2c411.645C215.211%2c394.29%2c199.866%2c379.78%2c180.332%2c378.945C159.483%2c378.054%2c140.156%2c389.693%2c129.431%2c407.594C118.391%2c426.02%2c116.077%2c449.281%2c127.17%2c467.675C137.957%2c485.561%2c159.484%2c493.272%2c180.332%2c491.999' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M343.59806772036745 297.34130338288554L448.7948297928145 344.2980986036471 440.01790639301794 243.97740508664256z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M617.3088687597849 341.80718522341897L555.8218331666237 420.50700191924363 696.0086854556096 403.29422081658015z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M667.6881360941112 437.1305190559341L783.3649802164493 332.9746207765699 679.2090819370852 217.29777665423177 563.5322378147471 321.45367493359595z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M475.15951702117644 600.898336700201L608.9454534854556 605.5702445487077 613.6173613339622 471.78430808442863 479.8314248696832 467.1124002359219z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1498.1892287677365 59.43244834475942L1351.0017119246222 2.932454222518345 1294.501717802381 150.11997106563263 1441.6892346454954 206.6199651878737z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M882.6 215.68 a148.44 148.44 0 1 0 296.88 0 a148.44 148.44 0 1 0 -296.88 0z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    }
+
     .testimonial-card {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3cpath d='M1056.2996450949677 268.00682398232436L888.5711650431135 235.2377908951925 934.7361643098659 377.3190491321843z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1310.7933019788748 434.92962590126274L1429.3021872197778 485.23366318310013 1361.0973392607123 316.4207406603597z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M804.814%2c390.108C837.425%2c389.681%2c858.932%2c360.047%2c874.889%2c331.603C890.391%2c303.97%2c901.79%2c271.718%2c886.925%2c243.738C871.307%2c214.341%2c838.093%2c200.461%2c804.814%2c199.7C769.981%2c198.903%2c732.675%2c209.273%2c715.928%2c239.826C699.625%2c269.569%2c714.216%2c304.289%2c731.483%2c333.483C748.334%2c361.973%2c771.717%2c390.542%2c804.814%2c390.108' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M137.00200741100394 288.8165693086527L259.85619454972147 174.25318640661897 145.29281164768776 51.398999267901445 22.438624508970236 165.96238216993515z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1250.8 272.56 a129.67 129.67 0 1 0 259.34 0 a129.67 129.67 0 1 0 -259.34 0z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M175.84 205.84 a118.89 118.89 0 1 0 237.78 0 a118.89 118.89 0 1 0 -237.78 0z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M960.09%2c178.846C988.263%2c178.941%2c1008.398%2c154.738%2c1022.09%2c130.116C1035.305%2c106.351%2c1042.098%2c78.352%2c1029.321%2c54.349C1015.839%2c29.021%2c988.769%2c14.54%2c960.09%2c13.641C929.662%2c12.688%2c897.127%2c22.841%2c882.913%2c49.762C869.317%2c75.511%2c883.868%2c104.708%2c898.81%2c129.7C913.211%2c153.787%2c932.026%2c178.751%2c960.09%2c178.846' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1039.769387282613 556.4870834892666L1019.4342591781804 428.09613761879393 891.0433133077076 448.4312657232266 911.3784414121403 576.8222115936993z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1400.8198927912183 434.91830597089273L1275.6986097767317 401.3921592312151 1367.2937460515407 560.0395889853793z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M818.8483391886757 532.4252299609534L943.9789472533889 563.6237945642811 975.1775118567166 438.49318649956786 850.0469037920034 407.2946218962402z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1246.186%2c207.166C1289.299%2c209.653%2c1336.775%2c201.222%2c1359.216%2c164.326C1382.295%2c126.381%2c1371.092%2c78.202%2c1347.515%2c40.565C1325.495%2c5.413%2c1287.639%2c-14.632%2c1246.186%2c-16.109C1201.67%2c-17.695%2c1152.957%2c-6.181%2c1131.53%2c32.871C1110.626%2c70.969%2c1129.807%2c116.166%2c1153.689%2c152.471C1174.788%2c184.544%2c1207.859%2c204.955%2c1246.186%2c207.166' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1088.550857433312 353.1074865055787L1012.981113765535 410.0533729116621 1069.9270001716184 485.62311657943917 1145.4967438393955 428.6772301733558z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M913.397%2c197.493C955.987%2c198.004%2c994.514%2c176.511%2c1018.581%2c141.37C1046.807%2c100.157%2c1069.501%2c48.171%2c1045.765%2c4.219C1021.257%2c-41.162%2c964.808%2c-57.523%2c913.397%2c-53.397C868.592%2c-49.801%2c834.222%2c-16.93%2c813.337%2c22.872C794.076%2c59.578%2c791.885%2c102.931%2c812.494%2c138.898C833.22%2c175.068%2c871.713%2c196.993%2c913.397%2c197.493' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M180.332%2c491.999C199.067%2c490.855%2c214.328%2c478.276%2c223.325%2c461.803C231.916%2c446.073%2c232.471%2c427.554%2c224.216%2c411.645C215.211%2c394.29%2c199.866%2c379.78%2c180.332%2c378.945C159.483%2c378.054%2c140.156%2c389.693%2c129.431%2c407.594C118.391%2c426.02%2c116.077%2c449.281%2c127.17%2c467.675C137.957%2c485.561%2c159.484%2c493.272%2c180.332%2c491.999' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M343.59806772036745 297.34130338288554L448.7948297928145 344.2980986036471 440.01790639301794 243.97740508664256z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M617.3088687597849 341.80718522341897L555.8218331666237 420.50700191924363 696.0086854556096 403.29422081658015z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M667.6881360941112 437.1305190559341L783.3649802164493 332.9746207765699 679.2090819370852 217.29777665423177 563.5322378147471 321.45367493359595z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M475.15951702117644 600.898336700201L608.9454534854556 605.5702445487077 613.6173613339622 471.78430808442863 479.8314248696832 467.1124002359219z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1498.1892287677365 59.43244834475942L1351.0017119246222 2.932454222518345 1294.501717802381 150.11997106563263 1441.6892346454954 206.6199651878737z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M882.6 215.68 a148.44 148.44 0 1 0 296.88 0 a148.44 148.44 0 1 0 -296.88 0z' fill='rgba(199%2c 211%2c 203%2c 0.26)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
         border-radius: 15px;
@@ -122,21 +126,17 @@
         -webkit-backdrop-filter: blur(6.8px);
     }
 
-    /* Keyframes for floating animation */
     @keyframes float {
         0% {
             transform: translateY(0);
-            /* Start position */
         }
 
         50% {
             transform: translateY(-10px);
-            /* Float upwards */
         }
 
         100% {
             transform: translateY(0);
-            /* Return to original position */
         }
     }
 </style>
@@ -257,8 +257,8 @@
         <div class="p-24 flex flex-wrap items-center justify-center" style="margin-top: -10%;">
 
             <!-- Card 1 -->
-            <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg"
-                style="background: rgba(134, 133, 133, 0.2);border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);"
+            <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg lack"
+                style="border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);"
                 onclick="openModal('modalUrban')">
                 <div class="relative pt-10 px-10 flex items-center justify-center">
                     <img class="relative w-60" src="photo/icon/skyscraper-building.png" alt="">
@@ -272,8 +272,8 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg"
-                style="background: rgba(134, 133, 133, 0.2);border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);"
+            <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg lack"
+                style="border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);"
                 onclick="openModal('modalRural')">
                 <div class="relative pt-10 px-10 flex items-center justify-center">
                     <img class="relative w-60" src="photo/icon/farm-house.png" alt="" style="width: 83%;">
@@ -287,8 +287,8 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg"
-                style="background: rgba(134, 133, 133, 0.2);border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);"
+            <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg max-w-xs shadow-lg lack"
+                style="border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);"
                 onclick="openModal('modalInternational')">
                 <div class="relative pt-10 px-10 flex items-center justify-center">
                     <img class="relative w-60" src="photo/icon/international.png" alt="" style="width: 83%;">
@@ -304,6 +304,8 @@
         </div>
 
     </section>
+
+
 
 
     <!-- component -->
@@ -329,17 +331,18 @@
                         <p class="text-base text-gray-700">Expert support for your projects.</p>
                     </div>
                 </div>
-                <div class="relative hidden lg:ml-32 lg:block lg:w-1/2">
+                <div class="relative lg:ml-32 lg:w-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg"
-                        class="my-6 mx-auto h-10 w-10 animate-bounce rounded-full bg-white p-2 lg:hidden" fill="none"
+                        class="my-6 mx-auto h-10 w-10 animate-bounce rounded-full bg-white p-2" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
                     </svg>
                     <div
-                        class="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
-                        <img src="photo/RemoteArchitect.png" style="height: 452px;">
+                        class="bg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
+                        <img src="photo/RemoteArchitect.png" style="height: 452px;" class="block">
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="hidden text-9xl varien absolute top-6 left-1/4 text-g/10 z-40    ">
@@ -376,7 +379,7 @@
     </div>
 
 
-    <section class="py-12 bg-white relative mt-10">
+    <section class="py-12 bg-white relative ">
         <div class="font font-Poppins mb-32 relative z-10">
             <div class="flex flex-col items-center relative">
                 <!-- Background Text -->
@@ -446,9 +449,11 @@
                 <!-- Blog Item 1 -->
                 <li class="mb-6 md:md-0 col-span-12 sm:col-span-6 lg:col-span-4">
                     <a href="#">
-                        <img src="photo/Rural House_06.png"
-                            class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
-                            alt="Affordable Rural Homes">
+                        <a href="javascript:void(0)" class="open-modal" data-img-src="photo/Rural House_06.png">
+                            <img src="photo/Rural House_06.png"
+                                class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
+                                alt="Affordable Rural Homes">
+                        </a>
                         <div class="flex items-center mb-3">
                             <span
                                 class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-red-500">
@@ -471,9 +476,11 @@
                 <!-- Blog Item 2 -->
                 <li class="mb-6 md:md-0 col-span-12 sm:col-span-6 lg:col-span-4">
                     <a href="#">
-                        <img src="photo/Urban_02.png"
-                            class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
-                            alt="Top Trends in Urban Design">
+                        <a href="javascript:void(0)" class="open-modal" data-img-src="photo/Urban_02.png">
+                            <img src="photo/Urban_02.png"
+                                class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
+                                alt="Top Trends in Urban Design">
+                        </a>
                         <div class="flex items-center mb-3">
                             <span
                                 class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-red-500">
@@ -496,9 +503,11 @@
                 <!-- Blog Item 3 -->
                 <li class="mb-6 md:md-0 col-span-12 sm:col-span-6 lg:col-span-4">
                     <a href="#">
-                        <img src="photo/Interior_06.png"
-                            class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
-                            alt="Remote Design for International Clients">
+                        <a href="javascript:void(0)" class="open-modal" data-img-src="photo/Interior_06.png">
+                            <img src="photo/Interior_06.png"
+                                class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
+                                alt="Remote Design for International Clients">
+                        </a>
                         <div class="flex items-center mb-3">
                             <span
                                 class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-red-500">
@@ -520,9 +529,11 @@
                 <!-- Blog Item 4 -->
                 <li class="mb-6 md:md-0 col-span-12 sm:col-span-6 lg:col-span-4">
                     <a href="#">
-                        <img src="photo/Drafting.jpg"
-                            class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
-                            alt="Drafting Services" style="height: 67%;">
+                        <a href="javascript:void(0)" class="open-modal" data-img-src="photo/Drafting.png">
+                            <img src="photo/Drafting.jpg"
+                                class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
+                                alt="Drafting Services" style="height: 67%;">
+                        </a>
                         <div class="flex items-center mb-3">
                             <p class="font-mono text-xs font-normal opacity-75 text-black">December 11th, 2024</p>
                         </div>
@@ -540,9 +551,11 @@
                 <!-- Blog Item 5 -->
                 <li class="mb-6 md:md-0 col-span-12 sm:col-span-6 lg:col-span-4">
                     <a href="#">
-                        <img src="photo/Rural_03.png"
-                            class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
-                            alt="Eco-Friendly Building Practices">
+                        <a href="javascript:void(0)" class="open-modal" data-img-src="photo/Rural_03.png">
+                            <img src="photo/Rural_03.png"
+                                class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
+                                alt="Eco-Friendly Building Practices">
+                        </a>
                         <div class="flex items-center mb-3">
                             <span
                                 class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-green-500">
@@ -556,7 +569,8 @@
                             </span>
                         </p>
                         <p class="mt-2 text-sm text-gray-600">
-                            Explore sustainable building methods that minimize environmental impact and reduce costs.
+                            Explore sustainable building methods that minimize environmental impact and reduce
+                            costs.
                         </p>
                     </a>
                 </li>
@@ -564,9 +578,11 @@
                 <!-- Blog Item 6 -->
                 <li class="mb-6 md:md-0 col-span-12 sm:col-span-6 lg:col-span-4">
                     <a href="#">
-                        <img src="photo/Rural House_06.png"
-                            class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
-                            alt="Modern Architecture for Small Spaces">
+                        <a href="javascript:void(0)" class="open-modal" data-img-src="photo/Rural House_06.png">
+                            <img src="photo/Rural House_06.png"
+                                class="w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg"
+                                alt="Modern Architecture for Small Spaces">
+                        </a>
                         <div class="flex items-center mb-3">
                             <span
                                 class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-blue-500">
@@ -592,7 +608,7 @@
     </section>
 
 
-    <section class="py-12 bg-white relative mt-10" id="contact">
+    <section class="py-12 bg-white relative" id="contact">
         <!-- Background Overlay with Opacity -->
         <div class="absolute inset-0 bg-cover bg-center opacity-5"
             style="background-image: url('photo/background.png');background-attachment: fixed;"></div>
@@ -792,13 +808,25 @@
     </section>
 
 
-
-    <!-- Modals -->
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 hidden">
+        <div class="rounded-lg w-11/12 md:w-1/2 p-6"
+            style="width: 41%;background: rgba(255, 255, 255, 0.2);border-radius: 16px;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);height: 100%;">
+            <button id="closeModal" class="absolute top-2 right-2 text-white font-bold text-2xl">&times;</button>
+            <img id="modalImg" class="w-full mb-4 rounded-lg" alt="">
+        </div>
+    </div>
     <!-- Urban Modal -->
     <div id="modalUrban" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden"
         onclick="closeModalOnOutsideClick(event, 'modalUrban')">
         <div class="bg-gray-900 text-white rounded-lg overflow-hidden shadow-xl" onclick="event.stopPropagation()"
             style="border: 1px solid #333; width: 90%; max-width: 800px; height: 80%; overflow-y: auto;">
+
+            <!-- Close Button -->
+            <button onclick="closeModal('modalUrban')"
+                style="position: absolute;top: 5rem;right: 19rem;background: transparent;border: none;color: white;font-size: 1.5rem;cursor: pointer;z-index: 20;">
+                &times;
+            </button>
 
             <!-- Header Section -->
             <div
@@ -806,11 +834,6 @@
                 <h2 class="text-4xl font-bold text-white text-center tracking-wider uppercase">
                     Urban Services
                 </h2>
-                <button
-                    style="position: absolute; top: 10px; right: 10px; background: #444; border: none; padding: 0.5rem; border-radius: 50%; cursor: pointer;"
-                    onclick="closeModal('modalUrban')">
-                    ✖
-                </button>
             </div>
 
             <!-- Video Section -->
@@ -869,17 +892,18 @@
         <div class="bg-gray-900 text-white rounded-lg overflow-hidden shadow-xl" onclick="event.stopPropagation()"
             style="border: 1px solid #333; width: 90%; max-width: 800px; height: 80%; overflow-y: auto;">
 
+            <!-- Close Button -->
+            <button onclick="closeModal('modalRural')"
+                style="position: absolute;top: 5rem;right: 19rem;background: transparent;border: none;color: white;font-size: 1.5rem;cursor: pointer;z-index: 20;">
+                &times;
+            </button>
             <!-- Header Section -->
             <div
                 style="position: sticky; top: 0; background: #111; z-index: 10; border-bottom: 1px solid #444; padding: 1rem;">
                 <h2 class="text-4xl font-bold text-white text-center tracking-wider uppercase">
                     Rural Services
                 </h2>
-                <button
-                    style="position: absolute; top: 10px; right: 10px; background: #444; border: none; padding: 0.5rem; border-radius: 50%; cursor: pointer;"
-                    onclick="closeModal('modalUrban')">
-                    ✖
-                </button>
+
             </div>
 
             <!-- Video Section -->
@@ -945,17 +969,18 @@
         <div class="bg-gray-900 text-white rounded-lg overflow-hidden shadow-xl" onclick="event.stopPropagation()"
             style="border: 1px solid #333; width: 90%; max-width: 800px; height: 80%; overflow-y: auto;">
 
+            <!-- Close Button -->
+            <button onclick="closeModal('modalInternational')"
+                style="position: absolute;top: 5rem;right: 19rem;background: transparent;border: none;color: white;font-size: 1.5rem;cursor: pointer;z-index: 20;">
+                &times;
+            </button>
             <!-- Header Section -->
             <div
                 style="position: sticky; top: 0; background: #111; z-index: 10; border-bottom: 1px solid #444; padding: 1rem;">
                 <h2 class="text-4xl font-bold text-white text-center tracking-wider uppercase">
                     International Services
                 </h2>
-                <button
-                    style="position: absolute; top: 10px; right: 10px; background: #444; border: none; padding: 0.5rem; border-radius: 50%; cursor: pointer;"
-                    onclick="closeModal('modalUrban')">
-                    ✖
-                </button>
+
             </div>
 
             <!-- Video Section -->
@@ -1012,9 +1037,32 @@
             </div>
         </div>
     </div>
-
+    @include('partials.footer')
 
     <script>
+        const openModalBtns = document.querySelectorAll('.open-modal');
+        const modal = document.getElementById('imageModal');
+        const closeModalBtn = document.getElementById('closeModal');
+        const modalImg = document.getElementById('modalImg');
+
+        openModalBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const imgSrc = btn.getAttribute('data-img-src');
+
+                modalImg.src = imgSrc;
+                modal.classList.remove('hidden');
+            });
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1035,7 +1083,10 @@
         }
 
         function closeModal(modalId) {
-            document.getElementById(modalId).classList.add('hidden');
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+            }
         }
 
         function closeModalOnOutsideClick(event, modalId) {
@@ -1043,6 +1094,7 @@
                 closeModal(modalId);
             }
         }
+
         const testimonialSlider = document.querySelector('.testimonial-slider');
         const testimonials = document.querySelectorAll('.testimonial-card');
         let currentIndex = 0;

@@ -3,45 +3,52 @@
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
     <!-- Navigation -->
-    <nav class="absolute top-0 left-0 p-6 w-full flex items-center justify-between z-20">
-        <!-- Logo -->
-        <div>
-            <img src="photo/logo.png" alt="Logo" class="h-10">
+    <nav class="bg-black bg-opacity-50 fixed w-full z-20">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="text-white font-bold text-xl">
+                <img src="photo/logo.png" alt="Logo" class="h-10">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <div><a href="#" class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Home</a></div>
+                <div><a href="#about" class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">About</a>
+                </div>
+                <div><a href="#mission"
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Mission</a></div>
+                <div><a href="#service"
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Services</a></div>
+                <div><a href="#blog" class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Blog</a>
+                </div>
+                <div><a href="#contact"
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Contact</a></div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
         </div>
 
-        <!-- Navigation Links -->
-        <ul class="hidden md:flex space-x-6 text-white uppercase text-sm">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-            <button id="menu-btn" class="text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </button>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-70">
+            <ul class="flex flex-col space-y-4 p-6">
+                <li><a href="#" class="text-white hover:text-gray-300 uppercase text-sm ">Home</a></li>
+                <li><a href="#about" class="text-white hover:text-gray-300 uppercase text-sm ">About</a></li>
+                <li><a href="#mission" class="text-white hover:text-gray-300 uppercase text-sm ">Mission</a></li>
+                <li><a href="#service" class="text-white hover:text-gray-300 uppercase text-sm ">Services</a></li>
+                <li><a href="#blog" class="text-white hover:text-gray-300 uppercase text-sm ">Blog</a></li>
+                <li><a href="#contact" class="text-white hover:text-gray-300 uppercase text-sm ">Contact</a></li>
+            </ul>
         </div>
     </nav>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full bg-black bg-opacity-70 hidden">
-        <ul class="flex flex-col space-y-6 text-white uppercase text-sm p-6">
-            <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#about" class="hover:underline">About</a></li>
-            <li><a href="#mission" class="hover:underline">Mission</a></li>
-            <li><a href="#service" class="hover:underline">Services</a></li>
-            <li><a href="#blog" class="hover:underline">Blog</a></li>
-            <li><a href="#contact" class="hover:underline">Contact</a></li>
-        </ul>
-    </div>
 
     <!-- Slider Section -->
     <div class="relative h-full w-full">
@@ -69,7 +76,8 @@
 
         <!-- Main Title -->
         <div id="main-title" class="relative border-4 border-white animate-fade-in">
-            <h1 class="text-white font-bold uppercase leading-tight tracking-wider px-4 py-2 text-xl md:text-3xl lg:text-5xl">
+            <h1
+                class="text-white font-bold uppercase leading-tight tracking-wider px-4 py-2 text-xl md:text-3xl lg:text-5xl">
                 Innovating Spaces, Empowering Communities
             </h1>
         </div>
@@ -96,11 +104,13 @@
 </div>
 
 <script>
-    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
+
+    mobileMenuToggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
     });
+
     // Slider Animation Script
     const slides = document.querySelectorAll('#slider > div');
     let currentSlide = 0;
@@ -146,9 +156,8 @@
     showSlide(currentSlide);
     setInterval(nextSlide, 5000);
 </script>
-
 <style>
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
         #content-section {
             padding: 4px;
             gap: 15px;
@@ -173,6 +182,7 @@
             padding: 0.5em 1.25em;
         }
     }
+
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -282,27 +292,13 @@
     }
 
     /* Hover effect with background color change */
-    nav ul li a:hover {
+    .nav {
+        transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+    }
+
+    .nav:hover {
         background-color: white;
         color: black;
-    }
-
-    /* Floating effect from bottom to top */
-    nav ul li a::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: black;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s ease-out;
-    }
-
-    nav ul li a:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
+        padding: 5px;
     }
 </style>
