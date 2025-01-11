@@ -5,13 +5,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="Photo/logo.png">
-    <title>Dstudio - ARCHITECTURE | INTERIOR | MASTER PLAN</title>
+    <title>DSTUDIO - ARCHITECTURE | INTERIOR | MASTER PLAN</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @media screen and (max-width: 768px) {
+        #who-we-are {
+            padding: 5% 3%;
+        }
+
+        .who-we-are-title {
+            font-size: 16px;
+            text-align: center;
+            padding-bottom: 4px;
+        }
+
+        .who-we-are-text {
+            font-size: 14px;
+            text-align: center;
+            line-height: 1.6;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .who-we-are-title {
+            font-size: 18px;
+            text-align: end;
+        }
+
+        .who-we-are-text {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    #serviceD {
+        transition: all 0.3s ease-in-out;
+    }
+
+    #serviceD:hover {
+        padding: 2px;
+        background-color: white;
+        text-decoration: underline;
+    }
+
+
+    #fixed-section {
+        display: flex;
+    }
+
+    @media screen and (max-width: 768px) {
+        #fixed-section {
+            display: none;
+            margin-top: 1767%;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        #fixed-section {
+            display: flex;
+        }
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -141,20 +203,24 @@
     }
 </style>
 
-<body
-    class="antialiased bg-fixed bg-no-repeat bg-cover md:container md:mx-auto md:px-4 lg:container lg:mx-auto lg:px-4">
+<body class="antialiased bg-fixed bg-no-repeat bg-cover md:container md:mx-auto md:px-4 lg:container lg:mx-auto lg:px-4"
+    style="font-family: serif;">
     <button id="scrollToTopBtn">↑</button>
 
-
     @include('partials.nav')
-
 
     <section style="background-color: #ffbe00;padding: 55px;border-top: 3px solid white;">
         <div class="flex"
             style="gap: 37%;margin-left: 9%;margin-top: -4%;margin-bottom: 3%;font-weight: 700;color: #2f3543;font-size: 16px;">
-            <h3>URBAN</h3>
-            <h3>REMOTE</h3>
-            <h3>RURAL</h3>
+            <a href="/UrbanService" target="_blank" id="serviceD">
+                <h3>URBAN</h3>
+            </a>
+            <a href="/RemoteService" target="_blank" id="serviceD">
+                <h3>REMOTE</h3>
+            </a>
+            <a href="/RuralService" target="_blank" id="serviceD">
+                <h3>RURAL</h3>
+            </a>
         </div>
         <p class="text-center">
             At DSTUDIO, we believe that architecture is for everyone. Whether you’re looking for a trendy urban
@@ -178,37 +244,7 @@
         </p>
     </section>
 
-    <style>
-        @media screen and (max-width: 768px) {
-            #who-we-are {
-                padding: 5% 3%;
-            }
 
-            .who-we-are-title {
-                font-size: 16px;
-                text-align: center;
-                padding-bottom: 4px;
-            }
-
-            .who-we-are-text {
-                font-size: 14px;
-                text-align: center;
-                line-height: 1.6;
-            }
-        }
-
-        @media screen and (min-width: 769px) {
-            .who-we-are-title {
-                font-size: 18px;
-                text-align: end;
-            }
-
-            .who-we-are-text {
-                font-size: 16px;
-                text-align: center;
-            }
-        }
-    </style>
 
     <!-- Who We Are -->
 
@@ -218,31 +254,10 @@
     @include('components.upIdea')
     @include('components.blog')
 
-    <section id="fixed-section"
-        style="position: absolute; top: 755%; left: 0; width: 100%; height: 7%; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(10px); z-index: 999; color: white; display: flex; justify-content: center; align-items: center; border-top: 2px solid black;">
-    </section>
-
-    <style>
-        #fixed-section {
-            display: flex;
-        }
-
-        @media screen and (max-width: 768px) {
-            #fixed-section {
-                display: none;
-                margin-top: 1767%;
-            }
-        }
-
-        @media screen and (min-width: 769px) {
-            #fixed-section {
-                display: flex;
-            }
-        }
-    </style>
-
+    <!--<section id="fixed-section"-->
+    <!--    style="position: absolute; top: 823%; left: 0; width: 100%; height: 7%; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(10px); z-index: 999; color: white; display: flex; justify-content: center; align-items: center; border-top: 2px solid black;">-->
+    <!--</section>-->
     @include('components.network')
-
 
     @include('components.contact')
     @include('partials.footer')
@@ -273,12 +288,17 @@
                 modal.classList.add('hidden');
             }
         });
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
                 });
             });
         });
@@ -333,6 +353,7 @@
                 behavior: "smooth",
             });
         });
+
     </script>
 
 </body>

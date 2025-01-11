@@ -1,4 +1,4 @@
-<div class="bg-white p-8" style="padding-left: 9%;padding-right: 3%;border-bottom: 2px solid #2f3543">
+<div class="bg-white p-8" id="network" style="padding-left: 9%;padding-right: 3%;border-bottom: 2px solid #2f3543">
     <h2 class="text-3xl mb-4">NETWORK</h2>
     <h3 class="text-xl font-semibold mb-6">Building a Community of Technical Excellence.</h3>
     <p class="text-gray-800 mb-6">

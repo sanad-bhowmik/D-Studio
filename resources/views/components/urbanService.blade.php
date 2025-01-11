@@ -1,4 +1,4 @@
-<div class="bg-white py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;">
+<div class="bg-white py-8" id="service" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;font-family:sans-serif;">
     <div class="">
         <div class="flex flex-wrap" id="urban-services-section">
             <!-- Left Text Section -->
@@ -34,7 +34,7 @@
                         integrate functionality and sustainability.
                     </li>
                 </ul>
-                <div style="margin-top: 64px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 129%;">
+                <div style="margin-top: 62px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 129%;">
                 </div>
             </div>
 

@@ -1,4 +1,4 @@
-<div class="bg-white py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;">
+<div class="bg-white py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;font-family:sans-serif;">
     <div class="">
         <div class="flex flex-wrap" id="rural-services-section">
             <!-- Left Text Section -->
@@ -37,7 +37,7 @@
                         audio and video communication.
                     </li>
                 </ul>
-                <div style="margin-top: 36px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 129%;">
+                <div style="margin-top: 32px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 129%;">
                 </div>
             </div>
 

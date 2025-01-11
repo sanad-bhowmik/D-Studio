@@ -6,30 +6,35 @@
     <nav class="bg-black bg-opacity-50 fixed w-full z-20" style=" width: 1249px;">
         <div class="container mx-auto px-6 py-4 flex items-center " style="">
             <!-- Logo -->
-            <a href="#" class="text-white font-bold text-xl" style="margin-right: 10%;">
+            <a href="/" class="text-white font-bold text-xl" style="margin-right: 10%;letter-spacing: 4px;">
                 DSTUDIO
             </a>
 
             <!-- Desktop Navigation -->
-            <div class="hidden md:flex space-x-8 divide-x divide-gray-500">
-                <div class="pr-4"><a href="#"
+            <div class="hidden md:flex space-x-8 divide-x divide-gray-100">
+                <div class="pr-4"><a href="#home"
                         class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Home</a></div>
-                <div class="pr-4 pl-4"><a href="#about"
-                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">About</a></div>
-                <div class="pr-4 pl-4"><a href="#mission"
-                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Services</a></div>
+                <div class="pr-4 pl-4">
+                    <a href="#about-us-section"
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">About</a>
+                </div>
+
                 <div class="pr-4 pl-4"><a href="#service"
-                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Upload Idea</a></div>
-                <div class="pr-4 pl-4"><a href="#blog"
-                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Blog</a></div>
-                <div class="pl-4"><a href="#contact"
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Services</a></div>
+                <div class="pr-4 pl-4"><a href="#upIdea"
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold" >Upload
+                        Idea</a></div>
+                <div class="pr-4 pl-4"><a href="#blog-section"
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold" >Blog</a>
+                </div>
+                <div class="pl-4"><a href="#network"
                         class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Network</a></div>
                 <div class="pl-4"><a href="#contact"
                         class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Contact</a></div>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none" style="margin-left: 12%;">
+            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none" style="margin-left: 9%;">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -40,12 +45,12 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden bg-black bg-opacity-70">
             <div class="px-6 py-4 space-y-2">
-                <a href="#" class="block text-white uppercase text-sm font-bold">Home</a>
-                <a href="#about" class="block text-white uppercase text-sm font-bold">About</a>
-                <a href="#mission" class="block text-white uppercase text-sm font-bold">Services</a>
-                <a href="#service" class="block text-white uppercase text-sm font-bold">Upload Idea</a>
-                <a href="#blog" class="block text-white uppercase text-sm font-bold">Blog</a>
-                <a href="#contact" class="block text-white uppercase text-sm font-bold">Network</a>
+                <a href="/" class="block text-white uppercase text-sm font-bold">Home</a>
+                <a href="#about-us-section" class="block text-white uppercase text-sm font-bold">About</a>
+                <a href="#service" class="block text-white uppercase text-sm font-bold">Services</a>
+                <a href="#upIdea" class="block text-white uppercase text-sm font-bold">Upload Idea</a>
+                <a href="#blog-section" class="block text-white uppercase text-sm font-bold">Blog</a>
+                <a href="#network" class="block text-white uppercase text-sm font-bold">Network</a>
                 <a href="#contact" class="block text-white uppercase text-sm font-bold">Contact</a>
             </div>
         </div>
@@ -54,7 +59,7 @@
 
 
     <!-- Slider Section -->
-    <div class="relative h-full w-full flex flex-wrap md:flex-nowrap">
+    <div class="relative h-full w-full flex flex-wrap md:flex-nowrap" id="home">
         <!-- Slider 1 -->
         <div class="w-full md:w-1/3 h-64 md:h-full flex items-end justify-center bg-cover bg-center image-slider relative"
             data-images="Photo/RuralRetail_07.png,Photo/Urban_02.png,Photo/Urban_03.png,Photo/Urban_04.png">
@@ -76,7 +81,6 @@
 
 
 </div>
-
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
@@ -106,6 +110,7 @@
             }, 5000 + index * 2000);
         });
     });
+
 </script>
 
 

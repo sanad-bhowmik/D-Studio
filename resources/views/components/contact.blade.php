@@ -1,4 +1,4 @@
-<div class="bg-white p-8" style="padding: 10%;">
+<div class="bg-white p-8" id="contact" style="padding: 10%;">
     <h2 class="text-3xl  mb-4">CONTACT</h2>
     <h3 class="text-xl font-semibold mb-6">
         Expert Designs Delivered Across the Country and Worldwide <br> via Remote Collaboration.

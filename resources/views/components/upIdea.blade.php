@@ -1,4 +1,4 @@
-<div class="bg-white py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;">
+<div class="bg-white py-8" id="upIdea" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;">
     <div class="">
         <div class="flex flex-wrap" id="upload-idea-section">
             <!-- Left Text Section -->

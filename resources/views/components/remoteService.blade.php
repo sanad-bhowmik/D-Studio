@@ -1,4 +1,4 @@
-<div class="bg-white py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;">
+<div class="bg-white py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;font-family:sans-serif;">
     <div class="">
         <div class="flex flex-wrap" id="remote-services-section">
             <!-- Left Text Section -->
@@ -35,7 +35,7 @@
                         or internationally.
                     </li>
                 </ul>
-                <div style="margin-top: 23px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 130%;">
+                <div style="margin-top: 20px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 130%;">
                 </div>
             </div>
 

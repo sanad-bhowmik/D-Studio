@@ -13,9 +13,7 @@
             <div class="w-full md:w-2/3 px-4 md:px-16 about-us-text">
                 <div class="flex flex-col md:flex-row justify-between">
                     <!-- Vision Section -->
-                    <div class="mb-8 md:mb-0 md:mr-8 about-us-vision" style="
-    margin-top: 26%;
-">
+                    <div class="mb-8 md:mb-0 md:mr-8 about-us-vision" style="margin-top: 26%;">
                         <h3 class="text-lg text-gray-800 mb-2" style="font-weight: 600;">Vision:</h3>
                         <p class="text-gray-700">
                             Architecture for Everyone—Innovative Solutions Within Reach.
