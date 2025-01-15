@@ -65,79 +65,25 @@
 
     <!-- Nav -->
 
-    <div class=" py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;">
-    <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('Photo/background.png'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 0.1; z-index: -1;background-attachment: fixed;">
-        </div>
-        <div class="">
-            <div class="flex flex-wrap" id="remote-services-section" style="margin-top: 8%;">
-                <!-- Left Text Section -->
-                <div class="w-full lg:w-1/2 px-4" id="remote-services-left">
-                    <h2 class="text-2xl font-bold text-black mb-4">REMOTE SERVICES</h2>
-                    <p class="font-semibold text-black mb-4">
-                        Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                    </p>
-                    <p class="text-black mb-4">
-                        As DSTUDIO, "Your Distant Design Partner" is more than just a slogan—it's our commitment to
-                        bringing
-                        architectural and interior design services closer to you, no matter where you are.
-                    </p>
-                    <h3 class="text-lg font-bold text-black mb-2">Our Services Include:</h3>
-                    <ul class="list-disc text-black pl-5 space-y-2">
-                        <li>
-                            <strong>Remote AutoCAD Drafting Services:</strong> Precise & Professional Drafting for
-                            projects
-                            across the country & worldwide.
-                        </li>
-                        <li>
-                            <strong>Remote 3D Visualization Services:</strong> High-quality visual representations that
-                            bring your project to life, enhancing understanding and communication.
-                        </li>
-                        <li>
-                            <strong>Remote Consultancy Services:</strong> Personalized guidance through audio or video
-                            calls
-                            over the internet, available to clients anywhere in the world.
-                        </li>
-                        <li>
-                            <strong>Remote Design Services:</strong> Architectural & interior solutions tailored to meet
-                            country-specific and international standards.
-                        </li>
-                        <li>
-                            Outsource your 2D AutoCAD Drafting, 3D Visualization, and design needs to DSTUDIO and focus
-                            on
-                            your creative vision—even without an in-house team. We are ready to enhance your project
-                            locally
-                            or internationally.
-                        </li>
-                    </ul>
-                    <div
-                        style="margin-top: 72px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 130%;">
-                    </div>
-                </div>
+    <div class="py-8" style="font-family: 'Nunito', serif; padding-bottom: 11px; background-color: #f4f4f9;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+        <div class="w-full px-4" id="urban-services-section" style="margin-top: 8%;">
 
-                <!-- Right Image Grid Section -->
-                <div class="w-full lg:w-1/2 px-4 mt-8 lg:mt-0" id="remote-services-right" style="margin-top: 28px;">
-                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
-                        style="margin-top: 65px;">
-                        <div>
-                            <img src="Photo/Remote_01.jpg" alt="Building Design 1" class="remote-image">
-                        </div>
-                        <div>
-                            <img src="Photo/Remote_02.jpg" alt="Building Design 2" class="remote-image">
-                        </div>
-                        <div>
-                            <img src="Photo/Remote_03.jpg" alt="Interior Design 1" class="remote-image">
-                        </div>
-                        <div>
-                            <img src="Photo/Remote_04.jpg" alt="Office Design" class="remote-image">
-                        </div>
-                    </div>
-                </div>
+            <div class="w-full" id="urban-services-left"
+                style="background-color: #ffffff;border-radius: 10px;padding: 40px;box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);margin: 0 auto;max-width: 1100px;line-height: 35px;">
+
+                {!! $remoteService->details !!}
+
             </div>
+
         </div>
     </div>
 
     <style>
+        h2 {
+            font-size: 28px;
+        }
+
         @media screen and (max-width: 768px) {
             #remote-services-section {
                 flex-direction: column;

@@ -65,79 +65,31 @@
 
     <!-- Nav -->
 
-    <div class=" py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;">
-        <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('Photo/background.png'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 0.1; z-index: -1;background-attachment: fixed;">
-        </div>
-        <div class="">
-            <div class="flex flex-wrap" id="upload-idea-section"style="margin-top: 8%;">
-                <!-- Left Text Section -->
-                <div class="w-full lg:w-1/2 px-4" id="upload-idea-left">
-                    <h2 class="text-2xl font-bold text-black mb-4">UPLOAD IDEA</h2>
-                    <p class="font-semibold text-black mb-4">
-                        Turn your vision into reality!
-                    </p>
-                    <p class="text-black mb-4">
-                        Whether you have a hand-drawn sketch of an interior layout, building design, or any
-                        rearrangement
-                        idea, DSTUDIO is here to bring it to life with precision.
-                    </p>
-                    <p class="text-black mb-4">
-                        Simply <strong>upload your sketch</strong> or existing drawings directly from your phone, and
-                        our
-                        team will:
-                    </p>
-                    <h3 class="text-lg font-bold text-black mb-2">Our Services Include:</h3>
-                    <ul class="list-disc text-black pl-5 space-y-2">
-                        <li>
-                            Transform your hand-drawn ideas into professional technical drawings with accurate
-                            measurements,
-                            ready for construction.
-                        </li>
-                        <li>
-                            Provide verification and expert input from certified architects and engineers to ensure the
-                            design is feasible and aligns with industry standards.
-                        </li>
-                        <li>
-                            Develop your existing drawings further to accommodate new requirements, enhancements, or
-                            modifications.
-                        </li>
-                        <li>
-                            This service is perfect for those looking for professional support in refining their
-                            creative
-                            ideas, improving existing plans, or visualizing their projects. Let us take your inputs and
-                            deliver polished, actionable solutions that meet your needs.
-                        </li>
-                    </ul>
-                    <div
-                        style="margin-top: 29px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 129%;">
-                    </div>
-                </div>
+    <div class="py-8" style="font-family: 'Nunito', serif; padding-bottom: 11px; background-color: #f4f4f9;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+        <div class="w-full px-4" id="urban-services-section" style="margin-top: 8%;">
 
-                <!-- Right Image Grid Section -->
-                <div class="w-full lg:w-1/2 px-4 mt-8 lg:mt-0" id="upload-idea-right">
-                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
-                        style="margin-top: 39px;">
-                        <div>
-                            <img src="Photo/Upload_01.jpg" alt="Building Design 1" class="upload-image">
-                        </div>
-                        <div>
-                            <img src="Photo/Upload_02.jpg" alt="Building Design 2" class="upload-image">
-                        </div>
-                        <div>
-                            <img src="Photo/Upload_03.jpg" alt="Interior Design 1" class="upload-image">
-                        </div>
-                        <div>
-                            <img src="Photo/Upload_04.png" alt="Office Design" class="upload-image">
-                        </div>
-                    </div>
-                </div>
+            <div class="w-full" id="urban-services-left"
+                style="background-color: #ffffff;border-radius: 10px;padding: 40px;box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);margin: 0 auto;max-width: 1100px;line-height: 40px;">
+
+                {{-- Check if data exists before rendering --}}
+                @if($uploadIdea)
+                    {!! $uploadIdea->details !!}
+                @else
+                    <p>No idea details available.</p>
+                @endif
+
             </div>
+
         </div>
     </div>
 
+
     <style>
-        /* Mobile responsive styles */
+        h2 {
+            font-size: 28px;
+        }
+
         @media screen and (max-width: 768px) {
             #upload-idea-section {
                 flex-direction: column;

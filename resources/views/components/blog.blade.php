@@ -4,104 +4,23 @@
         <h2 id="blog-title" class="text-2xl sm:text-3xl font-bold text-gray-900">
             BLOG
         </h2>
-        <div id="blog-grid" class="mt-4">
+        <div id="blog-grid" class="mt-4" style="font-size: 18px;font-family: 'Nunito', serif;">
             <div id="blog-columns" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-16 gap-y-12">
-
-                <!-- Left Side Content -->
-                <dl id="blog-left-content" class="space-y-4">
-                    <dt id="blog-intro" class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                        Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                    </dt>
-                    <dd id="blog-text">
-                        <p class="leading-6 text-base text-gray-800">
-                            At DSTUDIO, <strong>"Your Distant Office"</strong> is more than just a slogan—it's our
-                            commitment to bringing architectural and interior design services closer to you, no matter
-                            where you are.
-                        </p>
-                    </dd>
-                    <dt id="services-title" class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                        Our Services Include:
-                    </dt>
-                    <ul id="services-list" class="mt-4">
-                        <li class="leading-6 text-base text-gray-800">
-                            . Remote AutoCAD Drafting Services: Precise and professional drafting for projects across
-                            the country and worldwide.
-                        </li>
-                    </ul>
-                </dl>
-
-                <!-- Right Side Content -->
-                <dl id="blog-right-content" class="space-y-4 text-right sm:text-left">
-                    <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                        Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                    </dt>
-                    <dd>
-                        <p class="leading-6 text-base text-gray-800">
-                            At DSTUDIO, <strong>"Your Distant Office"</strong> is more than just a slogan—it's our
-                            commitment to bringing architectural and interior design services closer to you, no matter
-                            where you are.
-                        </p>
-                    </dd>
-                    <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                        Our Services Include:
-                    </dt>
-                    <ul class="mt-4">
-                        <li class="leading-6 text-base text-gray-800">
-                            . Remote AutoCAD Drafting Services: Precise and professional drafting for projects across
-                            the country and worldwide.
-                        </li>
-                    </ul>
-                </dl>
-
-                <!-- Left Side Content (2nd Section) -->
-                <dl id="blog-left-content2" class="space-y-4">
-                    <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                        Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                    </dt>
-                    <dd>
-                        <p class="leading-6 text-base text-gray-800">
-                            At DSTUDIO, <strong>"Your Distant Office"</strong> is more than just a slogan—it's our
-                            commitment to bringing architectural and interior design services closer to you, no matter
-                            where you are.
-                        </p>
-                    </dd>
-                    <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                        Our Services Include:
-                    </dt>
-                    <ul class="mt-4">
-                        <li class="leading-6 text-base text-gray-800">
-                            . Remote AutoCAD Drafting Services: Precise and professional drafting for projects across
-                            the country and worldwide.
-                        </li>
-                    </ul>
-                </dl>
-
-                <!-- Right Side Content (2nd Section) -->
-                <dl id="blog-right-content2" class="space-y-4 text-right sm:text-left">
-                    <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                        Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                    </dt>
-                    <dd>
-                        <p class="leading-6 text-base text-gray-800">
-                            At DSTUDIO, <strong>"Your Distant Office"</strong> is more than just a slogan—it's our
-                            commitment to bringing architectural and interior design services closer to you, no matter
-                            where you are.
-                        </p>
-                    </dd>
-                    <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                        Our Services Include:
-                    </dt>
-                    <ul class="mt-4">
-                        <li class="leading-6 text-base text-gray-800">
-                            . Remote AutoCAD Drafting Services: Precise and professional drafting for projects across
-                            the country and worldwide.
-                        </li>
-                    </ul>
-                </dl>
+                @foreach ($recentBlogs as $blog)
+                    <!-- Dynamic Blog Card -->
+                    <dl class="space-y-4">
+                        <dd>
+                            <p class="leading-6 text-xl text-gray-800" style="font-size: 10px;">
+                                {!! $blog->details !!}
+                            </p>
+                        </dd>
+                    </dl>
+                @endforeach
             </div>
         </div>
     </div>
 </div>
+
 
 <style>
     @media screen and (max-width: 768px) {

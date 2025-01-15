@@ -12,7 +12,7 @@
 </head>
 
 <body class="antialiased bg-fixed bg-no-repeat bg-cover md:container md:mx-auto md:px-4 lg:container lg:mx-auto lg:px-4"
-    style="font-family: serif;">
+    style="font-family: 'Nunito', serif;">
 
     <!-- Nav -->
     <nav class="bg-black bg-opacity-50 fixed w-full z-20" style=" width: 1249px;">
@@ -65,12 +65,8 @@
 
     <!-- Nav -->
 
-    <div id="blog-section" class="container mx-auto px-4 sm:px-6 lg:px-8" style="position: relative; overflow: hidden;">
-        <!-- Background Image Container with Opacity -->
-        <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('Photo/background.png'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 0.1; z-index: -1;background-attachment: fixed;">
-        </div>
-
+    <div id="blog-section" class="container mx-auto px-4 sm:px-6 lg:px-8"
+        style="position: relative; overflow: hidden;font-size: 18px;font-family: 'Nunito', serif;">
         <div id="blog-content"
             class="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
             <h2 id="blog-title" class="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -78,110 +74,21 @@
             </h2>
             <div id="blog-grid" class="mt-4">
                 <div id="blog-columns" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-16 gap-y-12">
-
-                    <!-- Left Side Content -->
-                    <dl id="blog-left-content" class="space-y-4">
-                        <dt id="blog-intro" class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                            Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                        </dt>
-                        <dd id="blog-text">
-                            <p class="leading-6 text-base text-gray-800">
-                                At DSTUDIO, <strong>"Your Distant Office"</strong> is more than just a slogan—it's our
-                                commitment to bringing architectural and interior design services closer to you, no
-                                matter
-                                where you are.
-                            </p>
-                        </dd>
-                        <dt id="services-title" class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                            Our Services Include:
-                        </dt>
-                        <ul id="services-list" class="mt-4">
-                            <li class="leading-6 text-base text-gray-800">
-                                . Remote AutoCAD Drafting Services: Precise and professional drafting for projects
-                                across
-                                the country and worldwide.
-                            </li>
-                        </ul>
-                    </dl>
-
-                    <!-- Right Side Content -->
-                    <dl id="blog-right-content" class="space-y-4 text-right sm:text-left">
-                        <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                            Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                        </dt>
-                        <dd>
-                            <p class="leading-6 text-base text-gray-800">
-                                At DSTUDIO, <strong>"Your Distant Office"</strong> is more than just a slogan—it's our
-                                commitment to bringing architectural and interior design services closer to you, no
-                                matter
-                                where you are.
-                            </p>
-                        </dd>
-                        <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                            Our Services Include:
-                        </dt>
-                        <ul class="mt-4">
-                            <li class="leading-6 text-base text-gray-800">
-                                . Remote AutoCAD Drafting Services: Precise and professional drafting for projects
-                                across
-                                the country and worldwide.
-                            </li>
-                        </ul>
-                    </dl>
-
-                    <!-- Left Side Content (2nd Section) -->
-                    <dl id="blog-left-content2" class="space-y-4">
-                        <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                            Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                        </dt>
-                        <dd>
-                            <p class="leading-6 text-base text-gray-800">
-                                At DSTUDIO, <strong>"Your Distant Office"</strong> is more than just a slogan—it's our
-                                commitment to bringing architectural and interior design services closer to you, no
-                                matter
-                                where you are.
-                            </p>
-                        </dd>
-                        <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                            Our Services Include:
-                        </dt>
-                        <ul class="mt-4">
-                            <li class="leading-6 text-base text-gray-800">
-                                . Remote AutoCAD Drafting Services: Precise and professional drafting for projects
-                                across
-                                the country and worldwide.
-                            </li>
-                        </ul>
-                    </dl>
-
-                    <!-- Right Side Content (2nd Section) -->
-                    <dl id="blog-right-content2" class="space-y-4 text-right sm:text-left">
-                        <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                            Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                        </dt>
-                        <dd>
-                            <p class="leading-6 text-base text-gray-800">
-                                At DSTUDIO, <strong>"Your Distant Office"</strong> is more than just a slogan—it's our
-                                commitment to bringing architectural and interior design services closer to you, no
-                                matter
-                                where you are.
-                            </p>
-                        </dd>
-                        <dt class="font-medium leading-6 text-gray-900 text-base sm:text-lg">
-                            Our Services Include:
-                        </dt>
-                        <ul class="mt-4">
-                            <li class="leading-6 text-base text-gray-800">
-                                . Remote AutoCAD Drafting Services: Precise and professional drafting for projects
-                                across
-                                the country and worldwide.
-                            </li>
-                        </ul>
-                    </dl>
+                    @foreach ($blogs as $blog)
+                        <!-- Blog Card -->
+                        <dl class="space-y-4">
+                            <dd>
+                                <p class="leading-6 text-base text-gray-800">
+                                    {!! $blog->details !!}
+                                </p>
+                            </dd>
+                        </dl>
+                    @endforeach
                 </div>
             </div>
         </div>
     </div>
+
 
     <style>
         @media screen and (max-width: 768px) {

@@ -11,7 +11,7 @@
             </a>
 
             <!-- Desktop Navigation -->
-            <div class="hidden md:flex space-x-8 divide-x divide-gray-100">
+            <div class="hidden md:flex space-x-8 divide-x divide-gray-100" style="margin-left: -24px;">
                 <div class="pr-4"><a href="#home"
                         class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Home</a></div>
                 <div class="pr-4 pl-4">
@@ -22,15 +22,27 @@
                 <div class="pr-4 pl-4"><a href="#service"
                         class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Services</a></div>
                 <div class="pr-4 pl-4"><a href="#upIdea"
-                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold" >Upload
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Upload
                         Idea</a></div>
                 <div class="pr-4 pl-4"><a href="#blog-section"
-                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold" >Blog</a>
+                        class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Blog</a>
                 </div>
                 <div class="pl-4"><a href="#network"
                         class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Network</a></div>
                 <div class="pl-4"><a href="#contact"
                         class="text-white hover:text-gray-300 uppercase text-sm nav font-bold">Contact</a></div>
+                <a href="/login" style="margin-left: 122px;border-left: none;cursor: pointer;">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        stroke="#ffffff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M4 21C4 17.4735 6.60771 14.5561 10 14.0709M19.8726 15.2038C19.8044 15.2079 19.7357 15.21 19.6667 15.21C18.6422 15.21 17.7077 14.7524 17 14C16.2923 14.7524 15.3578 15.2099 14.3333 15.2099C14.2643 15.2099 14.1956 15.2078 14.1274 15.2037C14.0442 15.5853 14 15.9855 14 16.3979C14 18.6121 15.2748 20.4725 17 21C18.7252 20.4725 20 18.6121 20 16.3979C20 15.9855 19.9558 15.5853 19.8726 15.2038ZM15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
+                                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -52,6 +64,18 @@
                 <a href="#blog-section" class="block text-white uppercase text-sm font-bold">Blog</a>
                 <a href="#network" class="block text-white uppercase text-sm font-bold">Network</a>
                 <a href="#contact" class="block text-white uppercase text-sm font-bold">Contact</a>
+                <a href="/login" style="margin-left: 122px;border-left: none;cursor: pointer;">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        stroke="#ffffff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M4 21C4 17.4735 6.60771 14.5561 10 14.0709M19.8726 15.2038C19.8044 15.2079 19.7357 15.21 19.6667 15.21C18.6422 15.21 17.7077 14.7524 17 14C16.2923 14.7524 15.3578 15.2099 14.3333 15.2099C14.2643 15.2099 14.1956 15.2078 14.1274 15.2037C14.0442 15.5853 14 15.9855 14 16.3979C14 18.6121 15.2748 20.4725 17 21C18.7252 20.4725 20 18.6121 20 16.3979C20 15.9855 19.9558 15.5853 19.8726 15.2038ZM15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
+                                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </a>
             </div>
         </div>
     </nav>
@@ -81,6 +105,7 @@
 
 
 </div>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const mobileMenuToggle = document.getElementById("mobile-menu-toggle");

@@ -1,65 +1,49 @@
-<div class="bg-white py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;font-family:sans-serif;">
+<div class="bg-white py-8" id="remoteService" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;font-family:sans-serif;">
     <div class="">
-        <div class="flex flex-wrap" id="remote-services-section">
+        <div class="flex flex-wrap" id="remote-services-section" style="font-family: 'Nunito', serif;">
             <!-- Left Text Section -->
             <div class="w-full lg:w-1/2 px-4" id="remote-services-left">
-                <h2 class="text-2xl font-bold text-black mb-4">REMOTE SERVICES</h2>
-                <p class="font-semibold text-black mb-4">
-                    Expert Designs Delivered Across the Country and Worldwide via Remote Collaboration.
-                </p>
-                <p class="text-black mb-4">
-                    As DSTUDIO, "Your Distant Design Partner" is more than just a slogan—it's our commitment to bringing
-                    architectural and interior design services closer to you, no matter where you are.
-                </p>
-                <h3 class="text-lg font-bold text-black mb-2">Our Services Include:</h3>
-                <ul class="list-disc text-black pl-5 space-y-2">
-                    <li>
-                        <strong>Remote AutoCAD Drafting Services:</strong> Precise & Professional Drafting for projects
-                        across the country & worldwide.
-                    </li>
-                    <li>
-                        <strong>Remote 3D Visualization Services:</strong> High-quality visual representations that
-                        bring your project to life, enhancing understanding and communication.
-                    </li>
-                    <li>
-                        <strong>Remote Consultancy Services:</strong> Personalized guidance through audio or video calls
-                        over the internet, available to clients anywhere in the world.
-                    </li>
-                    <li>
-                        <strong>Remote Design Services:</strong> Architectural & interior solutions tailored to meet
-                        country-specific and international standards.
-                    </li>
-                    <li>
-                        Outsource your 2D AutoCAD Drafting, 3D Visualization, and design needs to DSTUDIO and focus on
-                        your creative vision—even without an in-house team. We are ready to enhance your project locally
-                        or internationally.
-                    </li>
-                </ul>
-                <div style="margin-top: 20px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 130%;">
-                </div>
+                @if($remoteServiceData)
+                    {!! $remoteServiceData->details !!}
+                @else
+                    <p>No remote services data available at the moment.</p>
+                @endif
+                <div style="margin-top: 92px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 130%;"></div>
             </div>
 
             <!-- Right Image Grid Section -->
             <div class="w-full lg:w-1/2 px-4 mt-8 lg:mt-0" id="remote-services-right" style="margin-top: 28px;">
-                <div class="grid grid-cols-2 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
-                    style="margin-top: 65px;">
-                    <div>
-                        <img src="Photo/Remote_01.jpg" alt="Building Design 1" class="remote-image">
+                @if($remoteServiceData)
+                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2" style="margin-top: 65px;">
+                        @if($remoteServiceData->imgOne)
+                        <div>
+                            <img src="{{ asset($remoteServiceData->imgOne) }}" alt="Building Design 1" class="remote-image">
+                        </div>
+                        @endif
+                        @if($remoteServiceData->imgTwo)
+                        <div>
+                            <img src="{{ asset($remoteServiceData->imgTwo) }}" alt="Building Design 2" class="remote-image">
+                        </div>
+                        @endif
+                        @if($remoteServiceData->imgThree)
+                        <div>
+                            <img src="{{ asset($remoteServiceData->imgThree) }}" alt="Interior Design 1" class="remote-image">
+                        </div>
+                        @endif
+                        @if($remoteServiceData->imgFour)
+                        <div>
+                            <img src="{{ asset($remoteServiceData->imgFour) }}" alt="Office Design" class="remote-image">
+                        </div>
+                        @endif
                     </div>
-                    <div>
-                        <img src="Photo/Remote_02.jpg" alt="Building Design 2" class="remote-image">
-                    </div>
-                    <div>
-                        <img src="Photo/Remote_03.jpg" alt="Interior Design 1" class="remote-image">
-                    </div>
-                    <div>
-                        <img src="Photo/Remote_04.jpg" alt="Office Design" class="remote-image">
-                    </div>
-                </div>
+                @else
+                    <p>No images available for remote services.</p>
+                @endif
             </div>
         </div>
     </div>
 </div>
+
 
 <style>
     /* Mobile responsive styles */

@@ -12,6 +12,16 @@
 </head>
 
 <style>
+    #urban-services-left ol {
+        list-style-type: decimal;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    #urban-services-left li {
+        margin-bottom: 10px;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -204,21 +214,23 @@
 </style>
 
 <body class="antialiased bg-fixed bg-no-repeat bg-cover md:container md:mx-auto md:px-4 lg:container lg:mx-auto lg:px-4"
-    style="font-family: serif;">
+    style="font-family: 'Nunito', serif;">
     <button id="scrollToTopBtn">↑</button>
 
+
     @include('partials.nav')
+
 
     <section style="background-color: #ffbe00;padding: 55px;border-top: 3px solid white;">
         <div class="flex"
             style="gap: 37%;margin-left: 9%;margin-top: -4%;margin-bottom: 3%;font-weight: 700;color: #2f3543;font-size: 16px;">
-            <a href="/UrbanService" target="_blank" id="serviceD">
+            <a href="#service" id="serviceD">
                 <h3>URBAN</h3>
             </a>
-            <a href="/RemoteService" target="_blank" id="serviceD">
+            <a href="#remoteService" id="serviceD">
                 <h3>REMOTE</h3>
             </a>
-            <a href="/RuralService" target="_blank" id="serviceD">
+            <a href="#ruralService" id="serviceD">
                 <h3>RURAL</h3>
             </a>
         </div>
@@ -231,20 +243,16 @@
 
     <div style="background-color: white; padding: 4%;"></div>
 
-    @include('components.about')
+    @include('components.about', ['aboutData' => $aboutData])
 
     <!-- Who We Are -->
     <section id="who-we-are"
         style="padding: 5%; background-color: white; text-align: end; border-bottom: 2px solid #2f3543; padding-top: 0px; padding-bottom: 24px;">
         <h1 class="who-we-are-title" style="font-size: 18px; font-weight: 600; padding-bottom: 8px;">Who We Are :</h1>
-        <p class="who-we-are-text" style="text-align: center;">
-            DSTUDIO bridges the gap between professional architecture and accessibility. We deliver tailored designs for
-            urban, rural, and international clients, balancing cost, creativity, and functionality. With expertise,
-            affordability, and technology at the core of what we do, we create spaces that inspire.
+        <p class="who-we-are-text" style="text-align: center;width: 1129px;">
+            {{ $whoAreWeData->details }}
         </p>
     </section>
-
-
 
     <!-- Who We Are -->
 
@@ -288,20 +296,36 @@
                 modal.classList.add('hidden');
             }
         });
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                const scrollToTarget = () => {
+                    const targetPosition = targetElement.offsetTop;
+                    const currentPosition = window.scrollY;
+                    const distance = targetPosition - currentPosition;
+                    const step = distance / 100; // Adjust the divisor for smoother/rougher scroll
+
+                    const smoothScroll = () => {
+                        const newPosition = window.scrollY + step;
+                        if ((step > 0 && newPosition < targetPosition) || (step < 0 && newPosition > targetPosition)) {
+                            window.scrollTo(0, newPosition);
+                            requestAnimationFrame(smoothScroll);
+                        } else {
+                            window.scrollTo(0, targetPosition); // Final scroll position
+                        }
+                    };
+
+                    smoothScroll();
+                };
+
+                scrollToTarget();
             });
         });
+
 
         document.getElementById("menu-btn").addEventListener("click", function () {
             const mobileMenu = document.getElementById("mobile-menu");

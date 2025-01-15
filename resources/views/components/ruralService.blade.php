@@ -1,63 +1,47 @@
-<div class="bg-white py-8" style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;font-family:sans-serif;">
+<div class="bg-white py-8" id="ruralService"
+    style="padding-bottom: 0px; border-bottom: 3px solid #2f3543;font-family:sans-serif;">
     <div class="">
-        <div class="flex flex-wrap" id="rural-services-section">
+        <div class="flex flex-wrap" id="rural-services-section" style="font-family: 'Nunito', serif;">
             <!-- Left Text Section -->
             <div class="w-full lg:w-1/2 px-4" id="rural-services-left">
-                <h2 class="text-2xl font-bold text-black mb-4">RURAL SERVICES</h2>
-                <p class="font-semibold text-black mb-4">
-                    Affordable, Professional Designs for the Countryside.
-                </p>
-                <p class="text-black mb-4">
-                    We bring professional design solutions to rural areas, combining functionality, affordability, and
-                    thoughtful craftsmanship.
-                </p>
-                <h3 class="text-lg font-bold text-black mb-2">Our Services Include:</h3>
-                <ul class="list-disc text-black pl-5 space-y-2">
-                    <li>
-                        <strong>House Design: </strong> Thoughtfully crafted designs to maximize space and usability.
-                    </li>
-                    <li>
-                        <strong>Interior Design and Construction:</strong> Comprehensive services to transform spaces
-                        into functional, aesthetically pleasing environments within competitive budgets.
-                    </li>
-                    <li>
-                        <strong>Rural Interior Design:</strong> Functional and stylish interiors tailored to rural
-                        lifestyles.
-                    </li>
-                    <li>
-                        <strong>Commercial Area Design:</strong> Efficient designs for rural businesses, including shops
-                        and workspaces.
-                    </li>
-                    <li>
-                        <strong>Agricultural Spaces and Farmhouses:</strong> Expert layouts for farms, rural shops, and
-                        more.
-                    </li>
-                    <li>
-                        <strong>Remote Consultancy:</strong> Professional remote consultancy and project monitoring over
-                        audio and video communication.
-                    </li>
-                </ul>
-                <div style="margin-top: 32px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 129%;">
+                @if($ruralServiceData)
+                    {!! $ruralServiceData->details !!}
+                @else
+                    <p>No rural services data available at the moment.</p>
+                @endif
+                <div style="margin-top: 137px;background-color: #ffbe00;padding: 10px;margin-left: -97px;width: 129%;">
                 </div>
             </div>
 
             <!-- Right Image Grid Section -->
             <div class="w-full lg:w-1/2 px-4 mt-8 lg:mt-0" id="rural-services-right">
-                <div class="grid grid-cols-2 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
-                    style="margin-top: 39px;">
-                    <div>
-                        <img src="Photo/Rural_04.png" alt="Building Design 1" class="rural-image">
+                @if($ruralServiceData)
+                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+                        style="margin-top: 39px;">
+                        @if($ruralServiceData->imgOne)
+                            <div>
+                                <img src="{{ asset($ruralServiceData->imgOne) }}" alt="Building Design 1" class="rural-image">
+                            </div>
+                        @endif
+                        @if($ruralServiceData->imgTwo)
+                            <div>
+                                <img src="{{ asset($ruralServiceData->imgTwo) }}" alt="Building Design 2" class="rural-image">
+                            </div>
+                        @endif
+                        @if($ruralServiceData->imgThree)
+                            <div>
+                                <img src="{{ asset($ruralServiceData->imgThree) }}" alt="Interior Design 1" class="rural-image">
+                            </div>
+                        @endif
+                        @if($ruralServiceData->imgFour)
+                            <div>
+                                <img src="{{ asset($ruralServiceData->imgFour) }}" alt="Office Design" class="rural-image">
+                            </div>
+                        @endif
                     </div>
-                    <div>
-                        <img src="Photo/Rural Retail_06.png" alt="Building Design 2" class="rural-image">
-                    </div>
-                    <div>
-                        <img src="Photo/Rural House_06.png" alt="Interior Design 1" class="rural-image">
-                    </div>
-                    <div>
-                        <img src="Photo/Rural_03.png" alt="Office Design" class="rural-image">
-                    </div>
-                </div>
+                @else
+                    <p>No images available for rural services.</p>
+                @endif
             </div>
         </div>
     </div>
